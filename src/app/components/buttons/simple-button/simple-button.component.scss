@@ -1,0 +1,25 @@
+:host {
+  display: inline-flex;
+
+  button {
+    border:     none;
+    background: cornflowerblue;
+
+    &:focus {
+      background: red;
+    }
+
+    &:hover {
+      background: green;
+    }
+
+    &:active {
+      background: yellow;
+    }
+
+    &:disabled {
+      opacity:        0.5;
+      pointer-events: none;
+    }
+  }
+}

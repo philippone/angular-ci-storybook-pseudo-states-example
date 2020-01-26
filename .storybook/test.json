@@ -1,0 +1,183 @@
+[
+  Option
+  {
+    flags: '-V, --version',
+    required: false,
+    optional: false,
+    mandatory: false,
+    negate: false,
+    short: '-V',
+    long: '--version',
+    description: 'output the version number'
+  },
+  Option
+  {
+    flags: '-p, --port [number]',
+    required: false,
+    optional: true,
+    mandatory: false,
+    negate: false,
+    short: '-p',
+    long: '--port',
+    description: 'Port to run Storybook'
+  },
+  Option
+  {
+    flags: '-h, --host [string]',
+    required: false,
+    optional: true,
+    mandatory: false,
+    negate: false,
+    short: '-h',
+    long: '--host',
+    description: 'Host to run Storybook'
+  },
+  Option
+  {
+    flags: '-s, --static-dir <dir-names>',
+    required: true,
+    optional: false,
+    mandatory: false,
+    negate: false,
+    short: '-s',
+    long: '--static-dir',
+    description: 'Directory where to load static files from'
+  },
+  Option
+  {
+    flags: '-c, --config-dir [dir-name]',
+    required: false,
+    optional: true,
+    mandatory: false,
+    negate: false,
+    short: '-c',
+    long: '--config-dir',
+    description: 'Directory where to load Storybook configurations from'
+  },
+  Option
+  {
+    flags: '--https',
+    required: false,
+    optional: false,
+    mandatory: false,
+    negate: false,
+    long: '--https',
+    description: 'Serve Storybook over HTTPS. Note: You must '
+    +
+    'provide your own certificate information.'
+  },
+  Option
+  {
+    flags: '--ssl-ca <ca>',
+    required: true,
+    optional: false,
+    mandatory: false,
+    negate: false,
+    long: '--ssl-ca',
+    description: 'Provide an SSL certificate authority. (Optional with '
+    +
+    '--https, required if using a self-signed certificate)'
+  },
+  Option
+  {
+    flags: '--ssl-cert <cert>',
+    required: true,
+    optional: false,
+    mandatory: false,
+    negate: false,
+    long: '--ssl-cert',
+    description: 'Provide an SSL certificate. (Required with --https)'
+  },
+  Option
+  {
+    flags: '--ssl-key <key>',
+    required: true,
+    optional: false,
+    mandatory: false,
+    negate: false,
+    long: '--ssl-key',
+    description: 'Provide an SSL key. (Required with --https)'
+  },
+  Option
+  {
+    flags: '--smoke-test',
+    required: false,
+    optional: false,
+    mandatory: false,
+    negate: false,
+    long: '--smoke-test',
+    description: 'Exit after successful start'
+  },
+  Option
+  {
+    flags: '--ci',
+    required: false,
+    optional: false,
+    mandatory: false,
+    negate: false,
+    long: '--ci',
+    description: "CI mode (skip interactive prompts, don't open browser)"
+  },
+  Option
+  {
+    flags: '--quiet',
+    required: false,
+    optional: false,
+    mandatory: false,
+    negate: false,
+    long: '--quiet',
+    description: 'Suppress verbose build output'
+  },
+  Option
+  {
+    flags: '--no-version-updates',
+    required: false,
+    optional: false,
+    mandatory: false,
+    negate: true,
+    long: '--no-version-updates',
+    description: 'Suppress update check',
+    defaultValue: true
+  },
+  Option
+  {
+    flags: '--no-dll',
+    required: false,
+    optional: false,
+    mandatory: false,
+    negate: true,
+    long: '--no-dll',
+    description: 'Do not use dll reference',
+    defaultValue: true
+  },
+  Option
+  {
+    flags: '--debug-webpack',
+    required: false,
+    optional: false,
+    mandatory: false,
+    negate: false,
+    long: '--debug-webpack',
+    description: 'Display final webpack configurations for debugging purposes'
+  },
+  Option
+  {
+    flags: '--preview-url [string]',
+    required: false,
+    optional: true,
+    mandatory: false,
+    negate: false,
+    long: '--preview-url',
+    description: 'Disables the default storybook preview and lets your use your own'
+  },
+  Option
+  {
+    flags: '--docs',
+    required: false,
+    optional: false,
+    mandatory: false,
+    negate: false,
+    long: '--docs',
+    description: 'Build a documentation-only site using addon-docs'
+  }
+]
