@@ -5,6 +5,11 @@
     border:     none;
     background: cornflowerblue;
 
+
+    &.big-button {
+      height: 80px;
+    }
+
     &:focus {
       background: red;
     }

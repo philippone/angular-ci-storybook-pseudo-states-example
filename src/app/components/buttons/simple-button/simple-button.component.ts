@@ -11,6 +11,8 @@ export class SimpleButtonComponent implements OnInit {
 
   @Input() disabled = false;
 
+  @Input() big = false;
+
   @Output() clickFn = new EventEmitter<MouseEvent>();
 
   constructor() {

@@ -1,1 +1,3 @@
-<button [disabled]="disabled" (click)="clickHandler($event)">{{label}}</button>
+<button [class.big-button]="big"
+        [disabled]="disabled"
+        (click)="clickHandler($event)">{{label}}</button>
