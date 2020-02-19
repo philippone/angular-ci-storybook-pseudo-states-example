@@ -1,6 +1,5 @@
 import { SimpleButtonComponent } from './simple-button.component';
-import { withPseudo } from 'storybook-addon-pseudo-states-angular';
-import { AttributesStateOrderDefault, PseudoStateOrderDefault } from 'storybook-addon-pseudo-states-angular/dist/share/types';
+import { AttributesStatesDefault, withPseudo } from 'storybook-addon-pseudo-states-angular';
 
 export default {
   title: 'Simple Button',
@@ -8,10 +7,7 @@ export default {
   parameters: {
     withPseudo: {
       selector: 'button',
-      stateComposition: {
-        pseudo: PseudoStateOrderDefault,
-        attributes: [...AttributesStateOrderDefault, 'big']
-      }
+      attributes: [...AttributesStatesDefault, 'big']
     }
   }
 };
