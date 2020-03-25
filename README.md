@@ -1,5 +1,7 @@
 # AngularStorybookPseudoStates
 
+Example project to present usage of [@ergosign/storybook-addon-pseudo-states-angular](https://github.com/Ergosign/storybook-addon-pseudo-states/blob/master/src/angular/README.md)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.0-rc.5.
 
 ## Development server

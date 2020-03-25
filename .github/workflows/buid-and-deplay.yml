@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [10.x, 12.x]
+        node-version: [12.x]
 
     steps:
     - uses: actions/checkout@v2
@@ -22,20 +22,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
-    - run: npm run build-storybook --if-present
+    - run: npm run build-storybook -- -o .out
+    - run: npm run deploy-storybook -- --ci --existing-output-dir=.out
       env:
         CI: true
-        
-  depoly: 
-    needs: build
-    strategy:
-      matrix:
-        node-version: [10.x, 12.x]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
-      - run: npm run storybook-to-ghpages -- --ci
-    
+        GH_TOKEN: philippone:${{ secrets.GH_TOKEN }}
+
