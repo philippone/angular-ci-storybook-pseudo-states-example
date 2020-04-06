@@ -13,6 +13,8 @@ export class SimpleButtonComponent implements OnInit {
 
   @Input() big = false;
 
+  @Input() rounded = false;
+
   @Output() clickFn = new EventEmitter<MouseEvent>();
 
   constructor() {
