@@ -3,8 +3,8 @@ import { AttributesStatesDefault, withPseudo } from '@ergosign/storybook-addon-p
 import { boolean, withKnobs } from '@storybook/addon-knobs';
 
 export default {
-  title: 'Simple Button',
-  decorators: [withPseudo, withKnobs],
+  title: 'Simple Button without Pseudo',
+  decorators: [withKnobs],
   parameters: {
     withPseudo: {
       selector: 'button',
