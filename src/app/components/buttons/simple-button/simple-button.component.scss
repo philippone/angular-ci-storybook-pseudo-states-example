@@ -16,11 +16,17 @@
 
     &:focus {
       background: red;
+
+      &:hover {
+        background: violet;
+      }
     }
 
     &:hover {
       background: green;
     }
+
+
 
     &:active {
       background: yellow;

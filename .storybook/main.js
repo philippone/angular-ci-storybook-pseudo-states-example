@@ -10,6 +10,7 @@ module.exports = {
     '@storybook/addon-links',
     '@storybook/addon-notes',
     '@storybook/addon-knobs',
+    '@storybook/addon-viewport',
     "@ergosign/storybook-addon-pseudo-states-angular/register",  // enable toolbar button
   ],
 };

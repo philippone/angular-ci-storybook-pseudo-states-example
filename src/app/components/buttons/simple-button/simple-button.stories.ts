@@ -1,5 +1,5 @@
 import { SimpleButtonComponent } from './simple-button.component';
-import { AttributesStatesDefault, withPseudo } from '@ergosign/storybook-addon-pseudo-states-angular';
+import { AttributesStatesDefault, PseudoStatesDefault, withPseudo } from '@ergosign/storybook-addon-pseudo-states-angular';
 import { boolean, withKnobs } from '@storybook/addon-knobs';
 
 export default {
@@ -8,6 +8,7 @@ export default {
   parameters: {
     withPseudo: {
       selector: 'button',
+      pseudos: [...PseudoStatesDefault, 'focus & hover'],
       attributes: [...AttributesStatesDefault, 'big']
     }
   }
