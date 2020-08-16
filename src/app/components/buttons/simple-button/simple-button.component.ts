@@ -1,4 +1,9 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, HostBinding } from '@angular/core';
+
+export enum Theme {
+  DARK = 'dark',
+  LIGHT = 'light'
+}
 
 @Component({
   selector: 'app-simple-button',
@@ -13,9 +18,19 @@ export class SimpleButtonComponent implements OnInit {
 
   @Input() big = false;
 
+  @Input() 
+  set theme (value: Theme) {
+    this._theme = value;
+    this.themeClass = value;
+  }
+  _theme: Theme = Theme.LIGHT;
+
+
   @Input() rounded = false;
 
   @Output() clickFn = new EventEmitter<MouseEvent>();
+
+  @HostBinding('class') themeClass = Theme.LIGHT;
 
   constructor() {
   }

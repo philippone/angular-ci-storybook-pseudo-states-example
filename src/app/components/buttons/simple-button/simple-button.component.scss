@@ -1,10 +1,9 @@
-:host {
+:host, :host(.light) {
   display: inline-flex;
 
   button {
-    border:     none;
+    border: none;
     background: cornflowerblue;
-
 
     &.big-button {
       height: 80px;
@@ -26,15 +25,37 @@
       background: green;
     }
 
-
-
     &:active {
       background: yellow;
     }
 
     &:disabled {
-      opacity:        0.5;
+      opacity: 0.5;
       pointer-events: none;
+    }
+  }
+}
+
+:host(.dark) {
+  button {
+    background: black;
+    color: white;
+    border: none;
+
+    &:focus {
+      background: darkred;
+
+      &:hover {
+        background: darkviolet;
+      }
+    }
+
+    &:hover {
+      background: darkgreen;
+    }
+
+    &:active {
+      background: gold;
     }
   }
 }

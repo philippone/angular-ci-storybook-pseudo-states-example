@@ -8,13 +8,21 @@ import {
 import { boolean, withKnobs } from "@storybook/addon-knobs";
 
 export default {
-  title: "Simple Button",
+  title: "Simple Button Permutations",
   decorators: [withPseudo, withKnobs],
   parameters: {
     withPseudo: {
-      selector: "button",
+      selector: ["button"],
       pseudos: [...PseudoStatesDefault, "focus & hover"],
-      attributes: [...AttributesStatesDefault, "big"],
+      attributes: [...AttributesStatesDefault],
+      permutations: [
+        {
+          label: "Dark theme",
+          attr: "theme",
+          value: "dark",
+        },
+        "big",
+      ],
       styles: {
         orientation: Orientation.COLUMN,
       },
@@ -28,6 +36,10 @@ export const simpleButton = () => ({
   //   declarations: [],
   //   imports: []
   // },
+  template: `
+    <app-simple-button [label]="label" [rounded]="rounded"></app-simple-button>
+  `,
+
   props: {
     label: "Label",
     rounded: boolean("rounded Corners", false),
