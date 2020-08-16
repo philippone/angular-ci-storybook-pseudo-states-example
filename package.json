@@ -37,7 +37,7 @@
     "@angular/compiler-cli": "~10.0.8",
     "@angular/language-service": "~10.0.8",
     "@babel/core": "^7.9.0",
-    "@ergosign/storybook-addon-pseudo-states-angular": "file:../../storybook-pseudo-states/src/angular/ergosign-storybook-addon-pseudo-states-angular-0.0.1-alpha.32.tgz",
+    "@ergosign/storybook-addon-pseudo-states-angular": "^0.0.1-alpha.33",
     "@storybook/addon-actions": "^6.0.4",
     "@storybook/addon-knobs": "^6.0.4",
     "@storybook/addon-links": "^6.0.4",
