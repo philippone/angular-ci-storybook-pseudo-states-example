@@ -14,7 +14,7 @@ export default {
     withPseudo: {
       selector: ["button"],
       pseudos: [...PseudoStatesDefault, "focus & hover"],
-      attributes: [...AttributesStatesDefault],
+      attributes: [...AttributesStatesDefault, "big"],
       permutations: [
         {
           label: "Dark theme",

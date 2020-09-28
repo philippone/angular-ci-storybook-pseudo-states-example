@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output, HostBinding } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, HostBinding, ChangeDetectionStrategy } from '@angular/core';
 
 export enum Theme {
   DARK = 'dark',
@@ -8,7 +8,8 @@ export enum Theme {
 @Component({
   selector: 'app-simple-button',
   templateUrl: './simple-button.component.html',
-  styleUrls: ['./simple-button.component.scss']
+  styleUrls: ['./simple-button.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SimpleButtonComponent implements OnInit {
 
