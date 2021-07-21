@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SimpleButtonComponent } from './simple-button.component';
 
@@ -6,12 +6,12 @@ describe('SimpleButtonComponent', () => {
   let component: SimpleButtonComponent;
   let fixture: ComponentFixture<SimpleButtonComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
       declarations: [ SimpleButtonComponent ]
     })
     .compileComponents();
-  }));
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(SimpleButtonComponent);
