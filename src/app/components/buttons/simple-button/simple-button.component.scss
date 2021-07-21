@@ -1,61 +1,62 @@
 :host, :host(.light) {
-  display: inline-flex;
-
-  button {
-    border: none;
-    background: cornflowerblue;
-
-    &.big-button {
-      height: 80px;
-    }
-
-    &.rounded {
-      border-radius: 50%;
-    }
-
-    &:focus {
-      background: red;
-
+    display: inline-flex;
+  
+    button {
+      border: none;
+      background: cornflowerblue;
+  
+      &.big-button {
+        height: 80px;
+      }
+  
+      &.rounded {
+        border-radius: 50%;
+      }
+  
+      &:focus {
+        background: red;
+  
+        &:hover {
+          background: violet;
+        }
+      }
+  
       &:hover {
-        background: violet;
+        background: green;
+      }
+  
+      &:active {
+        background: yellow;
+      }
+  
+      &:disabled {
+        opacity: 0.5;
+        pointer-events: none;
       }
     }
-
-    &:hover {
-      background: green;
-    }
-
-    &:active {
-      background: yellow;
-    }
-
-    &:disabled {
-      opacity: 0.5;
-      pointer-events: none;
-    }
   }
-}
-
-:host(.dark) {
-  button {
-    background: black;
-    color: white;
-    border: none;
-
-    &:focus {
-      background: darkred;
-
+  
+  :host(.dark) {
+    button {
+      background: black;
+      color: white;
+      border: none;
+  
+      &:focus {
+        background: darkred;
+  
+        &:hover {
+          background: darkviolet;
+        }
+      }
+  
       &:hover {
-        background: darkviolet;
+        background: darkgreen;
+      }
+  
+      &:active {
+        background: gold;
       }
     }
-
-    &:hover {
-      background: darkgreen;
-    }
-
-    &:active {
-      background: gold;
-    }
   }
-}
+  

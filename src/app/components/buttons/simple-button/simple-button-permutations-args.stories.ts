@@ -12,8 +12,24 @@ import { moduleMetadata } from "@storybook/angular";
 import { ButtonsModule } from "../buttons.module";
 
 export default {
-  title: "Simple Button Permutations",
+  title: "Simple Button Permutations/Simple Button With Args",
   component: SimpleButtonComponent,
+  argTypes: {
+    label: {
+      control: 
+      'text'
+    },
+    rounded: {
+      control: 'boolean'
+    },
+    big: {
+      control: 'boolean'
+    },
+    clickFn: {
+      action: 'clickFn'
+    }
+
+  },
   decorators: [ 
     // moduleMetadata({
     //   declarations: [],
@@ -21,7 +37,7 @@ export default {
     // }),
     withPseudo
   ],
-  parameters: { 
+  parameters: {  
     withPseudo: {
       selector: ["button"],
       pseudos: [...PseudoStatesDefault, "focus & hover"],
@@ -45,29 +61,16 @@ export default {
   },
 } as Meta;;
 
-export const simpleButtonWithTemplate = () => ({
+
+const Template: Story<SimpleButtonComponent> = (args: SimpleButtonComponent) => ({
   component: SimpleButtonComponent,
-  // moduleMetadata: {
-  //   declarations: [],
-  //   imports: []
-  // },
-  template: `
-    <app-simple-button [label]="label" [rounded]="rounded"></app-simple-button>
-  `,
-  props: {
-    label: "Label",
-    rounded: boolean("rounded Corners", false),
-  },
+  props: args,
 });
 
-export const SimpleButton = () => {
-  return {
-    component: SimpleButtonComponent,
-    props: {
-      label: "Label",
-      rounded: boolean("rounded Corners", false),
-    },
-  };
-};
+export const SimpleButtonWithArgs = Template.bind({});
 
+SimpleButtonWithArgs.args = {
+  label: 'Label',
+  rounded: false,
+};
 
