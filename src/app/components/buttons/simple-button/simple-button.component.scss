@@ -1,62 +1,66 @@
 :host, :host(.light) {
     display: inline-flex;
-  
+
     button {
       border: none;
       background: cornflowerblue;
-  
+
       &.big-button {
         height: 80px;
       }
-  
+
       &.rounded {
         border-radius: 50%;
       }
-  
+
       &:focus {
         background: red;
-  
+
         &:hover {
           background: violet;
         }
       }
-  
+      
+      &:focus-visible {
+        background: orange;
+      }
+
       &:hover {
         background: green;
       }
-  
+
       &:active {
         background: yellow;
       }
-  
+
       &:disabled {
         opacity: 0.5;
         pointer-events: none;
       }
     }
   }
-  
+
   :host(.dark) {
     button {
       background: black;
       color: white;
       border: none;
-  
+
       &:focus {
         background: darkred;
-  
+
         &:hover {
           background: darkviolet;
         }
       }
-  
+
       &:hover {
         background: darkgreen;
       }
-  
+
       &:active {
         background: gold;
       }
     }
   }
-  
+

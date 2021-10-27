@@ -333,7 +333,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ":host, :host(.light) {\n    display: inline-flex;\n  \n    button {\n      border: none;\n      background: cornflowerblue;\n  \n      &.big-button {\n        height: 80px;\n      }\n  \n      &.rounded {\n        border-radius: 50%;\n      }\n  \n      &:focus {\n        background: red;\n  \n        &:hover {\n          background: violet;\n        }\n      }\n  \n      &:hover {\n        background: green;\n      }\n  \n      &:active {\n        background: yellow;\n      }\n  \n      &:disabled {\n        opacity: 0.5;\n        pointer-events: none;\n      }\n    }\n  }\n  \n  :host(.dark) {\n    button {\n      background: black;\n      color: white;\n      border: none;\n  \n      &:focus {\n        background: darkred;\n  \n        &:hover {\n          background: darkviolet;\n        }\n      }\n  \n      &:hover {\n        background: darkgreen;\n      }\n  \n      &:active {\n        background: gold;\n      }\n    }\n  }\n  ",
+                    "data": ":host, :host(.light) {\n    display: inline-flex;\n\n    button {\n      border: none;\n      background: cornflowerblue;\n\n      &.big-button {\n        height: 80px;\n      }\n\n      &.rounded {\n        border-radius: 50%;\n      }\n\n      &:focus {\n        background: red;\n\n        &:hover {\n          background: violet;\n        }\n      }\n      \n      &:focus-visible {\n        background: orange;\n      }\n\n      &:hover {\n        background: green;\n      }\n\n      &:active {\n        background: yellow;\n      }\n\n      &:disabled {\n        opacity: 0.5;\n        pointer-events: none;\n      }\n    }\n  }\n\n  :host(.dark) {\n    button {\n      background: black;\n      color: white;\n      border: none;\n\n      &:focus {\n        background: darkred;\n\n        &:hover {\n          background: darkviolet;\n        }\n      }\n\n      &:hover {\n        background: darkgreen;\n      }\n\n      &:active {\n        background: gold;\n      }\n    }\n  }\n\n",
                     "styleUrl": "./simple-button.component.scss"
                 }
             ],
@@ -501,21 +501,21 @@
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/environments/environment.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "object",
-                "defaultValue": "{\n  production: false\n}"
-            },
-            {
-                "name": "environment",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/environments/environment.prod.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "object",
                 "defaultValue": "{\n  production: true\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: false\n}"
             },
             {
                 "name": "require",
@@ -636,18 +636,6 @@
                     "type": "literal type"
                 }
             ],
-            "src/environments/environment.ts": [
-                {
-                    "name": "environment",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/environments/environment.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "object",
-                    "defaultValue": "{\n  production: false\n}"
-                }
-            ],
             "src/environments/environment.prod.ts": [
                 {
                     "name": "environment",
@@ -658,6 +646,18 @@
                     "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\n  production: true\n}"
+                }
+            ],
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: false\n}"
                 }
             ],
             "src/app/components/buttons/simple-button/simple-button-permutations.stories.ts": [

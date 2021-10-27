@@ -16,7 +16,7 @@ export default {
   component: SimpleButtonComponent,
   argTypes: {
     label: {
-      control: 
+      control:
       'text'
     },
     rounded: {
@@ -30,17 +30,17 @@ export default {
     }
 
   },
-  decorators: [ 
+  decorators: [
     // moduleMetadata({
     //   declarations: [],
     //   imports: [ButtonsModule]
     // }),
     withPseudo
   ],
-  parameters: {  
+  parameters: {
     withPseudo: {
       selector: ["button"],
-      pseudos: [...PseudoStatesDefault, "focus & hover"],
+      pseudos: [...PseudoStatesDefault, "focus & hover", "focus-visible"],
       attributes: [...AttributesStatesDefault],
       permutations: [
         {
@@ -59,7 +59,7 @@ export default {
       },
     },
   },
-} as Meta;;
+} as Meta;
 
 
 const Template: Story<SimpleButtonComponent> = (args: SimpleButtonComponent) => ({
