@@ -540,7 +540,7 @@
                 "name": "SimpleButtonWithArgs",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/buttons/simple-button/simple-button-permutations-args.stories.ts",
+                "file": "src/app/components/buttons/simple-button/simple-button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -550,7 +550,7 @@
                 "name": "SimpleButtonWithArgs",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/buttons/simple-button/simple-button.stories.ts",
+                "file": "src/app/components/buttons/simple-button/simple-button-permutations-args.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -570,7 +570,7 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/buttons/simple-button/simple-button-permutations-args.stories.ts",
+                "file": "src/app/components/buttons/simple-button/simple-button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<SimpleButtonComponent>",
@@ -580,7 +580,7 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/buttons/simple-button/simple-button.stories.ts",
+                "file": "src/app/components/buttons/simple-button/simple-button-permutations-args.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<SimpleButtonComponent>",
@@ -682,28 +682,6 @@
                     "defaultValue": "() => ({\n  component: SimpleButtonComponent,\n  // moduleMetadata: {\n  //   declarations: [],\n  //   imports: []\n  // },\n  template: `\n    <app-simple-button [label]=\"label\" [rounded]=\"rounded\"></app-simple-button>\n  `,\n  props: {\n    label: \"Label\",\n    rounded: boolean(\"rounded Corners\", false),\n  },\n})"
                 }
             ],
-            "src/app/components/buttons/simple-button/simple-button-permutations-args.stories.ts": [
-                {
-                    "name": "SimpleButtonWithArgs",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/buttons/simple-button/simple-button-permutations-args.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/buttons/simple-button/simple-button-permutations-args.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<SimpleButtonComponent>",
-                    "defaultValue": "(args: SimpleButtonComponent) => ({\n  component: SimpleButtonComponent,\n  props: args,\n})"
-                }
-            ],
             "src/app/components/buttons/simple-button/simple-button.stories.ts": [
                 {
                     "name": "SimpleButtonWithArgs",
@@ -720,6 +698,28 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/components/buttons/simple-button/simple-button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<SimpleButtonComponent>",
+                    "defaultValue": "(args: SimpleButtonComponent) => ({\n  component: SimpleButtonComponent,\n  props: args,\n})"
+                }
+            ],
+            "src/app/components/buttons/simple-button/simple-button-permutations-args.stories.ts": [
+                {
+                    "name": "SimpleButtonWithArgs",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/buttons/simple-button/simple-button-permutations-args.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/buttons/simple-button/simple-button-permutations-args.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<SimpleButtonComponent>",
