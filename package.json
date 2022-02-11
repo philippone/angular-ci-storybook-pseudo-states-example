@@ -39,6 +39,8 @@
     "@storybook/addon-knobs": "6.3.1",
     "@storybook/addon-links": "6.4.18",
     "@storybook/addon-postcss": "2.0.0",
+    "postcss": ">=8.2.13",
+    "trim": "1.0.1",
     "@storybook/addons": "6.4.18",
     "@storybook/angular": "6.4.18",
     "@storybook/builder-webpack5": "6.4.18",
@@ -55,6 +57,7 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
     "postcss-pseudo-classes": "0.3.0",
-    "typescript": "~4.5.5"
+    "typescript": "~4.5.5",
+    "glob-parent": ">=5.1.2"
   }
 }

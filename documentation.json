@@ -7,7 +7,7 @@
     "classes": [
         {
             "name": "AppPage",
-            "id": "class-AppPage-4ee91dad524760153d3c0f6f0014153c",
+            "id": "class-AppPage-26322ff073dfcbfa6519992fd3cd1b20b193e0915c429b3aac5a0788d894b559631222ec399201274a33c6c801dda21f5de403acbb0dd35d73f50f5bc7ff08f3",
             "file": "e2e/src/app.po.ts",
             "deprecated": false,
             "deprecationMessage": "",
@@ -19,7 +19,7 @@
                     "name": "getTitleText",
                     "args": [],
                     "optional": false,
-                    "returnType": "any",
+                    "returnType": "Promise<string>",
                     "typeParameters": [],
                     "line": 8,
                     "deprecated": false,
@@ -29,7 +29,7 @@
                     "name": "navigateTo",
                     "args": [],
                     "optional": false,
-                    "returnType": "any",
+                    "returnType": "Promise<any>",
                     "typeParameters": [],
                     "line": 4,
                     "deprecated": false,
@@ -47,7 +47,7 @@
     "components": [
         {
             "name": "AppComponent",
-            "id": "component-AppComponent-d3475b20b87f42433d80bdd81e3f87b2",
+            "id": "component-AppComponent-b3abda8fc3e1e11df771a6960d164ff40754a16b2638db64c478c2933c3e651add6c8cd4927576b718b638b731ddd6c9f4e3abe11a57c3650bc13004f705423a",
             "file": "src/app/app.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -98,7 +98,7 @@
         },
         {
             "name": "SimpleButtonComponent",
-            "id": "component-SimpleButtonComponent-88e65b2a8c160efbc092dfdc7fa20b75",
+            "id": "component-SimpleButtonComponent-4d348dcc6b83a85ad6d2e951cf8d7e296926d237f1f81844865c9017a65853f243ca37e4be948d398e5964f25f55734849efcc593ce1fd60a12f0bde1e20df4f",
             "file": "src/app/components/buttons/simple-button/simple-button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -121,7 +121,8 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 20,
-                    "type": "boolean"
+                    "type": "boolean",
+                    "decorators": []
                 },
                 {
                     "name": "disabled",
@@ -129,7 +130,8 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 18,
-                    "type": "boolean"
+                    "type": "boolean",
+                    "decorators": []
                 },
                 {
                     "name": "label",
@@ -137,7 +139,8 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 16,
-                    "type": "string"
+                    "type": "string",
+                    "decorators": []
                 },
                 {
                     "name": "rounded",
@@ -145,14 +148,16 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 30,
-                    "type": "boolean"
+                    "type": "boolean",
+                    "decorators": []
                 },
                 {
                     "name": "theme",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 23,
-                    "type": ""
+                    "type": "",
+                    "decorators": []
                 }
             ],
             "outputsClass": [
@@ -175,86 +180,6 @@
                     "optional": false,
                     "description": "",
                     "line": 27
-                },
-                {
-                    "name": "big",
-                    "defaultValue": "false",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "optional": false,
-                    "description": "",
-                    "line": 20,
-                    "decorators": [
-                        {
-                            "name": "Input",
-                            "stringifiedArguments": ""
-                        }
-                    ]
-                },
-                {
-                    "name": "clickFn",
-                    "defaultValue": "new EventEmitter<MouseEvent>()",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "optional": false,
-                    "description": "",
-                    "line": 32,
-                    "decorators": [
-                        {
-                            "name": "Output",
-                            "stringifiedArguments": ""
-                        }
-                    ]
-                },
-                {
-                    "name": "disabled",
-                    "defaultValue": "false",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "optional": false,
-                    "description": "",
-                    "line": 18,
-                    "decorators": [
-                        {
-                            "name": "Input",
-                            "stringifiedArguments": ""
-                        }
-                    ]
-                },
-                {
-                    "name": "label",
-                    "defaultValue": "'test'",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "string",
-                    "optional": false,
-                    "description": "",
-                    "line": 16,
-                    "decorators": [
-                        {
-                            "name": "Input",
-                            "stringifiedArguments": ""
-                        }
-                    ]
-                },
-                {
-                    "name": "rounded",
-                    "defaultValue": "false",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "optional": false,
-                    "description": "",
-                    "line": 30,
-                    "decorators": [
-                        {
-                            "name": "Input",
-                            "stringifiedArguments": ""
-                        }
-                    ]
                 },
                 {
                     "name": "themeClass",
@@ -322,7 +247,8 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 34,
-                    "type": "Theme"
+                    "type": "Theme",
+                    "decorators": []
                 }
             ],
             "hostListeners": [],
@@ -387,6 +313,13 @@
     "modules": [
         {
             "name": "AppModule",
+            "id": "module-AppModule-2ec58e7a32463b9b6cd970cb31e08e29029a47873b1b978b2bb334fc7975f6f5b3557f06f1d8edb8d9117c1bc37b26d4301c2a5e8ccced6f4a56dde5c6a98af4",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppComponent } from './app.component';\n\n@NgModule({\n  declarations: [\n    AppComponent\n  ],\n  imports: [\n    BrowserModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -424,6 +357,13 @@
         },
         {
             "name": "AppRoutingModule",
+            "id": "module-AppRoutingModule-0c6cdfa1d31d5d951606231f79412e1e1ba9a95e515b56edd37db5f18787a74cb9e53e628b8cd10c7be7939fc6b1b4795d3513b1a838c2f593a3d872d9791db8",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app-routing.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { Routes, RouterModule } from '@angular/router';\n\n\nconst routes: Routes = [];\n\n@NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule]\n})\nexport class AppRoutingModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -453,6 +393,13 @@
         },
         {
             "name": "ButtonsModule",
+            "id": "module-ButtonsModule-abcf329cb25e3dffbcc69024fa49c2f1da6018534b9255a185442f0ce12b0a18cca1f6f11219da15a4d90bfe93a616cacaad67cb05cc844661642b6795d96e40",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/components/buttons/buttons.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { SimpleButtonComponent } from './simple-button/simple-button.component';\n\n\n\n@NgModule({\n  declarations: [\n    SimpleButtonComponent\n  ],\n  imports: [\n    CommonModule\n  ]\n})\nexport class ButtonsModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -540,7 +487,7 @@
                 "name": "SimpleButtonWithArgs",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/buttons/simple-button/simple-button.stories.ts",
+                "file": "src/app/components/buttons/simple-button/simple-button-permutations-args.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -550,7 +497,7 @@
                 "name": "SimpleButtonWithArgs",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/buttons/simple-button/simple-button-permutations-args.stories.ts",
+                "file": "src/app/components/buttons/simple-button/simple-button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -570,7 +517,7 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/buttons/simple-button/simple-button.stories.ts",
+                "file": "src/app/components/buttons/simple-button/simple-button-permutations-args.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<SimpleButtonComponent>",
@@ -580,7 +527,7 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/buttons/simple-button/simple-button-permutations-args.stories.ts",
+                "file": "src/app/components/buttons/simple-button/simple-button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<SimpleButtonComponent>",
@@ -682,28 +629,6 @@
                     "defaultValue": "() => ({\n  component: SimpleButtonComponent,\n  // moduleMetadata: {\n  //   declarations: [],\n  //   imports: []\n  // },\n  template: `\n    <app-simple-button [label]=\"label\" [rounded]=\"rounded\"></app-simple-button>\n  `,\n  props: {\n    label: \"Label\",\n    rounded: boolean(\"rounded Corners\", false),\n  },\n})"
                 }
             ],
-            "src/app/components/buttons/simple-button/simple-button.stories.ts": [
-                {
-                    "name": "SimpleButtonWithArgs",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/buttons/simple-button/simple-button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/buttons/simple-button/simple-button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<SimpleButtonComponent>",
-                    "defaultValue": "(args: SimpleButtonComponent) => ({\n  component: SimpleButtonComponent,\n  props: args,\n})"
-                }
-            ],
             "src/app/components/buttons/simple-button/simple-button-permutations-args.stories.ts": [
                 {
                     "name": "SimpleButtonWithArgs",
@@ -720,6 +645,28 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/components/buttons/simple-button/simple-button-permutations-args.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<SimpleButtonComponent>",
+                    "defaultValue": "(args: SimpleButtonComponent) => ({\n  component: SimpleButtonComponent,\n  props: args,\n})"
+                }
+            ],
+            "src/app/components/buttons/simple-button/simple-button.stories.ts": [
+                {
+                    "name": "SimpleButtonWithArgs",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/buttons/simple-button/simple-button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/buttons/simple-button/simple-button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<SimpleButtonComponent>",
@@ -826,7 +773,7 @@
                 "linktype": "component",
                 "name": "SimpleButtonComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/18",
+                "coverageCount": "0/13",
                 "status": "low"
             },
             {
