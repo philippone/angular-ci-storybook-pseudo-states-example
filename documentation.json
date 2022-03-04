@@ -481,7 +481,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
-                "defaultValue": "() => {\n  return {\n    component: SimpleButtonComponent,\n    props: {\n      label: \"Label\",\n      rounded: boolean(\"rounded Corners\", false),\n    },\n  };\n}"
+                "defaultValue": "() => {\n  return {\n    // component: SimpleButtonComponent,\n    props: {\n      label: 'Label',\n      rounded: boolean('rounded Corners', false),\n    },\n  };\n}"
             },
             {
                 "name": "SimpleButtonWithArgs",
@@ -511,7 +511,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
-                "defaultValue": "() => ({\n  component: SimpleButtonComponent,\n  // moduleMetadata: {\n  //   declarations: [],\n  //   imports: []\n  // },\n  template: `\n    <app-simple-button [label]=\"label\" [rounded]=\"rounded\"></app-simple-button>\n  `,\n  props: {\n    label: \"Label\",\n    rounded: boolean(\"rounded Corners\", false),\n  },\n})"
+                "defaultValue": "() => ({\n  // component: SimpleButtonComponent,\n  // moduleMetadata: {\n  //   declarations: [],\n  //   imports: []\n  // },\n  template: `\n    <app-simple-button [label]=\"label\" [rounded]=\"rounded\"></app-simple-button>\n  `,\n  props: {\n    label: 'Label',\n    rounded: boolean('rounded Corners', false),\n  },\n})"
             },
             {
                 "name": "Template",
@@ -521,7 +521,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<SimpleButtonComponent>",
-                "defaultValue": "(args: SimpleButtonComponent) => ({\n  component: SimpleButtonComponent,\n  props: args,\n})"
+                "defaultValue": "(\n  args: SimpleButtonComponent\n) => ({\n  // component: SimpleButtonComponent,\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -531,7 +531,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<SimpleButtonComponent>",
-                "defaultValue": "(args: SimpleButtonComponent) => ({\n  component: SimpleButtonComponent,\n  props: args,\n})"
+                "defaultValue": "(\n  args: SimpleButtonComponent\n) => ({\n  component: SimpleButtonComponent,\n  props: args,\n})"
             }
         ],
         "functions": [],
@@ -616,7 +616,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
-                    "defaultValue": "() => {\n  return {\n    component: SimpleButtonComponent,\n    props: {\n      label: \"Label\",\n      rounded: boolean(\"rounded Corners\", false),\n    },\n  };\n}"
+                    "defaultValue": "() => {\n  return {\n    // component: SimpleButtonComponent,\n    props: {\n      label: 'Label',\n      rounded: boolean('rounded Corners', false),\n    },\n  };\n}"
                 },
                 {
                     "name": "simpleButtonWithTemplate",
@@ -626,7 +626,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
-                    "defaultValue": "() => ({\n  component: SimpleButtonComponent,\n  // moduleMetadata: {\n  //   declarations: [],\n  //   imports: []\n  // },\n  template: `\n    <app-simple-button [label]=\"label\" [rounded]=\"rounded\"></app-simple-button>\n  `,\n  props: {\n    label: \"Label\",\n    rounded: boolean(\"rounded Corners\", false),\n  },\n})"
+                    "defaultValue": "() => ({\n  // component: SimpleButtonComponent,\n  // moduleMetadata: {\n  //   declarations: [],\n  //   imports: []\n  // },\n  template: `\n    <app-simple-button [label]=\"label\" [rounded]=\"rounded\"></app-simple-button>\n  `,\n  props: {\n    label: 'Label',\n    rounded: boolean('rounded Corners', false),\n  },\n})"
                 }
             ],
             "src/app/components/buttons/simple-button/simple-button-permutations-args.stories.ts": [
@@ -648,7 +648,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<SimpleButtonComponent>",
-                    "defaultValue": "(args: SimpleButtonComponent) => ({\n  component: SimpleButtonComponent,\n  props: args,\n})"
+                    "defaultValue": "(\n  args: SimpleButtonComponent\n) => ({\n  // component: SimpleButtonComponent,\n  props: args,\n})"
                 }
             ],
             "src/app/components/buttons/simple-button/simple-button.stories.ts": [
@@ -670,7 +670,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<SimpleButtonComponent>",
-                    "defaultValue": "(args: SimpleButtonComponent) => ({\n  component: SimpleButtonComponent,\n  props: args,\n})"
+                    "defaultValue": "(\n  args: SimpleButtonComponent\n) => ({\n  component: SimpleButtonComponent,\n  props: args,\n})"
                 }
             ]
         },

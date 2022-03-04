@@ -1,52 +1,49 @@
-import { SimpleButtonComponent } from "./simple-button.component";
+import { SimpleButtonComponent } from './simple-button.component';
 import {
   AttributesStatesDefault,
   PseudoStatesDefault,
   withPseudo,
   Orientation,
-} from "@ergosign/storybook-addon-pseudo-states-angular";
-import { boolean, withKnobs } from "@storybook/addon-knobs";
+} from '@ergosign/storybook-addon-pseudo-states-angular';
+import { boolean, withKnobs } from '@storybook/addon-knobs';
 // import { Meta, Story } from "@storybook/angular";
 import { Meta, Story } from '@storybook/angular/types-6-0';
-import { moduleMetadata } from "@storybook/angular";
-import { ButtonsModule } from "../buttons.module";
+import { moduleMetadata } from '@storybook/angular';
+import { ButtonsModule } from '../buttons.module';
 
 export default {
-  title: "Simple Button",
+  title: 'Simple Button',
   component: SimpleButtonComponent,
   argTypes: {
     label: {
-      control: 
-      'text'
+      control: 'text',
     },
     rounded: {
-      control: 'boolean'
+      control: 'boolean',
     },
     big: {
-      control: 'boolean'
+      control: 'boolean',
     },
     clickFn: {
-      action: 'clickFn'
-    }
-
+      action: 'clickFn',
+    },
   },
-  decorators: [ 
-    withPseudo
-  ],
-  parameters: {  
+  decorators: [withPseudo],
+  parameters: {
     withPseudo: {
-      selector: ["button"],
-      pseudos: [...PseudoStatesDefault, "focus & hover"],
+      selector: ['button'],
+      pseudos: [...PseudoStatesDefault, 'focus & hover'],
       attributes: [...AttributesStatesDefault],
       styles: {
         orientation: Orientation.COLUMN,
       },
     },
   },
-} as Meta;;
+} as Meta;
 
-
-const Template: Story<SimpleButtonComponent> = (args: SimpleButtonComponent) => ({
+const Template: Story<SimpleButtonComponent> = (
+  args: SimpleButtonComponent
+) => ({
   component: SimpleButtonComponent,
   props: args,
 });
@@ -57,4 +54,3 @@ SimpleButtonWithArgs.args = {
   label: 'Label',
   rounded: false,
 };
-
